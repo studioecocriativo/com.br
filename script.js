@@ -167,3 +167,11 @@ modal.addEventListener("click", (e) => {
 if (window.location.hostname === "localhost") {
   console.log("%cStudio EcoCriativo JS FINALIZADO ✔️", "color: #C7B8EA; font-weight: bold;");
 }
+// ===== MENU HAMBÚRGUER =====
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("open");
+  navMenu.classList.toggle("show");
+});
